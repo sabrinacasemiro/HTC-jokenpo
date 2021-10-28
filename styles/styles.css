@@ -1,0 +1,191 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFC2E4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.score-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.winning-alert{
+    height: 74px;
+    font-size: 33px;
+    background-color: #EB4B76;
+    display: flex;
+    align-items: center;
+    padding: 15px 69px;
+    box-sizing: border-box;
+    border-radius: 12px 12px 0 0;
+}
+
+.scoreboard-box{
+    height: 148px;
+    background-color: #EB4B76;
+    display: flex;
+    padding: 0 11px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 17px;
+}
+
+.player{
+    font-size: 38px;
+    margin: 0 12px;
+}
+
+.scoreboard{
+    height: 120px;
+    width: 120px;
+    background-color: #FFC2E4;
+    font-size: 104px;
+    color: #EB4B76;
+    border-radius: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.versus{
+    font-size: 58px;
+    margin: 0 52px;
+}
+
+.box-playing-field{
+    height: 414px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.box-choose-move{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 19px;
+}
+
+.button{
+    height: 80px;
+    width: 220px;
+    background-color: #EB4B76;
+    color: #FFC2E4;
+    font-size: 44px;
+    border: 1px solid #EB4B76;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #FFC2E4;
+    color: #EB4B76;
+    transition-duration: .5s;
+}
+
+.playing-field{
+    height: 100%;
+    background-color: #EB4B76;
+    display: flex;
+    align-items: center;
+    border-radius: 17px;
+}
+
+.field{
+    height: 345px;
+    width: 464px;
+    background-color: #FFC2E4;
+    border-radius: 17px;
+    margin: 0 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.versus-field{
+    font-size: 104px;
+    margin: 0 65px;
+}
+
+.box-button-footer{
+    width: 576px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-footer{
+    height: 69px;
+    width: 238px;
+}
+
+.button-start:hover{
+    background-color: #AEEBB1;
+    border: 1px solid #1EFF21;
+    color: #1EFF21;
+}
+
+.button-start-clicked:hover{
+    background-color: #FF6161;
+    color: #FF1E1E;
+    border: 1px solid #FF1E1E;
+}
+
+.favicon{
+    width: 75px;
+    position: absolute;
+    right: 70px;
+    bottom: 20px;
+    opacity: 50%;
+    z-index: -1;
+}
+
+.field-player1 .img-moove{
+    animation: image-moove1 1s ease;
+}
+
+.field-player2 .img-moove{
+    animation: image-moove2 1s ease;
+    transform: scaleX(-1);
+}
+
+.img-moove{
+    width: 75%;
+}
+
+@keyframes image-moove1{
+    0%{
+        transform: translateX(-70px);
+    }
+    50%{
+        transform: translateX(100px) scaleX(.5);
+        
+    }
+    100%{
+        transform: translateX(0px) scaleX(1);
+    }
+}
+
+@keyframes image-moove2{
+    0%{
+        transform: translateX(70px) scaleX(-1);
+    }
+    50%{
+        transform: translateX(-100px) scaleX(-.5);
+        
+    }
+    100%{
+        transform: translateX(0px) scaleX(-1);
+    }
+}

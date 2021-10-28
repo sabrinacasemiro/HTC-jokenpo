@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon-32x32.png">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Jokenpo</title>
+</head>
+
+<body>
+    <div class="score-box">
+        <div class="winning-alert">
+            <h1 class="winner"></h1>
+        </div>
+        <div class="scoreboard-box">
+            <h2 class="player player1">Jogador 1</h2>
+            <div class="scoreboard scoreboard-player1">
+                <span class="score score-player1">0</span>
+            </div>
+            <span class="versus">vs</span>
+            <div class="scoreboard scoreboard-player2">
+                <span class="score score-player2">0</span>
+            </div>
+            <h2 class="player player2">Jogador 2</h2>
+        </div>
+    </div>
+    <div class="box-playing-field">
+        <div class="box-choose-move">
+            <button class="button button-stone-player1">Pedra</button>
+            <button class="button button-paper-player1">Papel</button>
+            <button class="button button-scissors-player1">Tesoura</button>
+        </div>
+        <div class="playing-field">
+            <div class="field field-player1"></div>
+            <span class="versus-field">vs</span>
+            <div class="field field-player2"></div>
+        </div>
+        <div class="box-choose-move">
+            <button class="button button-stone-player2">Pedra</button>
+            <button class="button button-paper-player2">Papel</button>
+            <button class="button button-scissors-player2">Tesoura</button>
+        </div>
+    </div>
+    <div class="box-button-footer">
+        <button class="button button-footer button-start">Iniciar</button>
+        <button class="button button-footer button-restart">Reiniciar</button>
+    </div>
+    <img src="android-chrome-512x512.png" class="favicon">
+    <script src="index.js"></script>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+
+</html> 
